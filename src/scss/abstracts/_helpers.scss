@@ -1,0 +1,33 @@
+.text-center {
+    text-align: center !important;
+}
+
+.bg-accent-red {
+    background-color: $colour-accent-red;
+}
+
+.bg-accent-purple {
+    background-color: $colour-accent-purple;
+}
+
+.bg-accent-green {
+    background-color: $colour-accent-green;
+}
+
+.bg-pattern {
+    background-image: url('./img/pattern.png');
+    background-repeat: repeat;
+}
+
+.bg-fixed {
+    background-attachment: fixed;
+}
+
+.img-push-right {
+    position: relative;
+    left: 30px;
+}
+
+.paragraph-constrain {
+    max-width: $paragraph-constraint;
+}

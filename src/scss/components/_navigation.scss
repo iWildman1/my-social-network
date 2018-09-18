@@ -1,0 +1,43 @@
+nav {
+
+    .navbar {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .navbar-brand img {
+            max-width: 125px;
+        }
+    }
+
+    &.nav-menu-closed {
+        .nav-menu {
+            display: none;
+        }
+    }
+
+    .nav-button {
+        background-color: transparent;
+        border: none;
+        width: 40px;
+        cursor: pointer;
+        border-radius: 0;
+        padding: 5px !important;
+
+        .nav-button-bar {
+            width: 100%;
+            height: 3px;
+            background-color: black;
+            display: block;
+            margin-bottom: 5px;
+            border-radius: 150px;
+
+            &:last-of-type {
+                margin-bottom: 0px;
+            }
+        }
+    }
+    
+}

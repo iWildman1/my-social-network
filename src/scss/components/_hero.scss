@@ -1,0 +1,24 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    position: relative;
+
+    .hero-header {
+        padding-top: 1.5rem;
+    }
+
+    .hero-body {
+        padding-top: 13rem;
+        padding-bottom: 16rem;
+    }
+
+    .chevron-down {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,12 @@
+section {
+
+    padding: $section-padding-normal 0;
+
+    &.pad-large {
+        padding: $section-padding-large 0;
+    }
+
+    &.pad-small {
+        padding: $section-padding-small 0;
+    }
+}

@@ -1,0 +1,28 @@
+.container-lg {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container {
+    width: 80%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+
+    .column {
+        flex: 1;
+        display: flex;
+        align-items: center;
+
+        &.centralise {
+            text-align: center;
+        }
+
+        img {
+            max-width: 90%;
+        }
+    }
+}

@@ -1,0 +1,92 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: $heading-1-size;
+
+    &.large {
+        font-size: $heading-1-large-size;
+    }
+}
+
+h2 {
+    font-size: $heading-2-size;
+}
+
+h3 {
+    font-size: $heading-3-size;
+}
+
+h4 {
+    font-size: $heading-4-size;
+}
+
+h5 {
+    font-size: $heading-5-size;
+}
+
+h6 {
+    font-size: $heading-6-size;
+}
+
+p {
+    font-size: $paragraph-font-size;
+    line-height: $paragraph-line-height;
+    color: $colour-text-main;
+}
+
+.colour-accent-red {
+    color: $colour-accent-red;
+}
+
+.colour-accent-green {
+    color: $colour-accent-green;
+}
+
+.colour-accent-purple {
+    color: $colour-accent-purple;
+}
+
+.size-1-override {
+    font-size: $heading-1-size !important;
+}
+
+.size-2-override {
+    font-size: $heading-2-size !important;
+}
+
+.size-3-override {
+    font-size: $heading-3-size !important;
+}
+
+.size-4-override {
+    font-size: $heading-4-size !important;
+}
+
+.size-5-override {
+    font-size: $heading-5-size !important;
+}
+
+.size-6-override {
+    font-size: $heading-6-size !important;
+}
+
+.header-margin-large {
+    margin-bottom: $header-margin-large;
+}
+
+.underline-red {
+    position: relative;
+
+    &::after {
+        content: "";
+        background-color: $colour-accent-red;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 5px;
+        width: 160px;
+        bottom: -30px;
+    }
+}
