@@ -16,9 +16,14 @@
 @import './layout/grid';
 @import './layout/header';
 @import './layout/section';
+@import './layout/clients';
+@import './layout/footer';
 
 
 //Components
 
 @import './components/hero';
 @import './components/navigation';
+@import './components/edgeless_grid_item';
+@import './components/contact-form';
+@import './components/icon-list';

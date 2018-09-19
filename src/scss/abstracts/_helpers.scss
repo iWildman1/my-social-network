@@ -31,3 +31,18 @@
 .paragraph-constrain {
     max-width: $paragraph-constraint;
 }
+
+.decoration-bottom-right {
+    display: none;
+
+    @media(min-width: 800px) {
+        position: absolute;
+        bottom: 3rem;
+        right: 0;
+        display: initial;
+    }
+}
+
+.body-menu-open {
+    overflow: hidden;
+}

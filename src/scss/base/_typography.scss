@@ -48,6 +48,16 @@ p {
     color: $colour-accent-purple;
 }
 
+.paragraph-colour-white {
+    p {
+        color: white;
+    }
+}
+
+.text-white {
+    color: white;
+}
+
 .size-1-override {
     font-size: $heading-1-size !important;
 }
@@ -88,5 +98,11 @@ p {
         height: 5px;
         width: 160px;
         bottom: -30px;
+    }
+}
+
+.no-underline {
+    &::after {
+        display: none !important;
     }
 }

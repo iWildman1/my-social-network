@@ -1,0 +1,152 @@
+.edgeless-grid {
+    .item {
+        flex: 0 0 33.3333%;
+        height: 22rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        h2 {
+            padding: 0;
+            margin: 0;
+            width: 10.5rem;
+            color: white;
+            line-height: 2rem;
+            position: relative;
+            transition: all 0.2s ease-in-out;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -15px;
+                left: 0;
+                width: 20%;
+                height: 5px;
+                background-color: white;
+                transition: 0.3s ease-in-out;
+            }
+        }
+
+        &.item-closed {       
+            .open-only {
+                display: none;
+            }
+
+            &:hover {
+                h2 {
+                    transform: scale(1.05);
+
+                    &::after {
+                        width: 40%;
+                    }
+                }
+            }
+
+            
+        }
+
+        &.item-open {
+            display: flex;
+            flex-direction: column;
+
+            .open-only {
+                display: initial;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 99;
+                cursor: default;
+
+                .container {
+                    height: 100%;
+                }
+
+
+                .item-header {
+                    justify-self: flex-end;
+
+                    .close-btn {
+                        margin-top: 5rem;
+                        display: inline-block;
+                        height: 2rem;
+                        width: 2rem;
+                        float: right;
+                        position: relative;
+                        cursor: pointer;
+
+                        .close-bar {
+                            display: inline-block;
+                            width: 100%;
+                            height: 2px;
+                            background-color: white;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+
+                            &:first-of-type {
+                                transform: translate(-50%, -50%) rotate(45deg);
+                            }
+
+                            &:last-of-type {
+                                transform: translate(-50%, -50%) rotate(-45deg);
+                            }
+                        }
+                    }
+                }
+
+                .item-inner {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 24rem;
+
+                    p {
+                        color: white;
+                        margin-top: 2rem;
+                        position: relative;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            bottom: -2rem;
+                            width: 6rem;
+                            height: 7px;
+                            background-color: white;
+                            left: 0;
+                        }
+                    }
+                }
+
+                .item-lower {
+                    position: absolute;
+                    left: 50%;
+                    bottom: 3rem;
+                    transform: translateX(-50%);
+
+                    span {
+                        margin-left: 1rem;
+                        margin-right: 1rem;
+                        cursor: pointer;
+                        
+                        &.inactive {
+                            opacity: 0.7;
+                            cursor: default;
+                        }
+
+                        i {
+                            font-size: 30px;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -11,9 +11,11 @@
 
 .row {
     display: flex;
+    width: 100%;
+    flex-direction: column;
 
     .column {
-        flex: 1;
+        flex: 0 0 100%;
         display: flex;
         align-items: center;
 
@@ -24,5 +26,33 @@
         img {
             max-width: 90%;
         }
+
+        @media (min-width: 800px) {
+            flex: 1;
+        }
+    }
+
+    &.no-centre {
+        .column {
+            align-items: flex-start;
+            
+        }
+    }
+
+    @media (min-width: 800px) {
+        flex-direction: row;
+    }
+}
+
+.css-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin-top: 7rem;
+    grid-row-gap: 5rem;
+
+    @media (min-width: 800px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }

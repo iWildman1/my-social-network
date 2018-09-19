@@ -1,0 +1,23 @@
+.icon-list {
+    padding-left: 2rem;
+
+    li {
+        display: flex;
+        margin-bottom: 1rem;
+
+        .icon {
+            display: flex;
+            flex: 0 0 2rem;
+            font-size: 30px;
+            justify-content: center;
+            color: $colour-accent-purple;
+        }
+
+        .list-item {
+            padding-left: 1rem;
+            padding-top: 0.4rem;
+            color: white;
+            line-height: 1.25rem;
+        }
+    }
+}

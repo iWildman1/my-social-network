@@ -1,5 +1,6 @@
 section {
 
+    position: relative;
     padding: $section-padding-normal 0;
 
     &.pad-large {
@@ -8,5 +9,9 @@ section {
 
     &.pad-small {
         padding: $section-padding-small 0;
+    }
+
+    &.no-padding {
+        padding: 0 !important;
     }
 }

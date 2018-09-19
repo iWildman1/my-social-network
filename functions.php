@@ -44,7 +44,8 @@ if ( ! function_exists( 'my_social_network_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'my-social-network' ),
+			'main-menu' => esc_html__( 'Primary', 'my-social-network' ),
+			'footer-menu' => esc_html__( 'Footer', 'my-social-network' )
 		) );
 
 		/*
@@ -176,3 +177,21 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	acf_add_options_page();
  }
 
+ /**
+  * Register Service post type
+  */
+
+function create_service_post_type() {
+	register_post_type( 'services',
+		array(
+			'labels' => array(
+				'name' => __( 'Services' ),
+				'singular_name' => __( 'Service' )
+			),
+			'public' => true,
+			'has_archive' => false
+		)
+	);
+};
+
+add_action( 'init', 'create_service_post_type' );

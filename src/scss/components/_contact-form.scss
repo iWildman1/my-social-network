@@ -1,0 +1,44 @@
+.contact-form {
+
+    width: 100%;
+    padding-right: 3rem;
+
+    p {
+        margin-bottom: 2rem;
+
+        &:last-of-type {
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    .form-group {
+        display: flex;
+        padding-bottom: 0.5rem;
+
+        input {
+            display: inline-block;
+            flex-grow: 1;
+            margin-left: 0.5rem;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid white;
+            color: white;
+        }
+    }
+
+    textarea {
+        width: 100%;
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+    }
+
+    .submit-btn {
+        margin-top: 1rem;
+        border: none;
+        padding: 0.75rem;
+        width: 80%;
+        font-weight: 600;
+    }
+}

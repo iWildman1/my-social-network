@@ -4,7 +4,8 @@
   "description": "A WordPress Theme for the My Social Network website",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --watch --mode=development --hide-modules"
+    "dev": "webpack --watch --mode=development --hide-modules",
+    "build": "webpack --mode=production"
   },
   "author": "Daniel Wildman",
   "license": "ISC",
@@ -21,6 +22,7 @@
     "webpack-cli": "^3.1.0"
   },
   "dependencies": {
-    "babel": "^6.23.0"
+    "babel": "^6.23.0",
+    "jquery": "^3.3.1"
   }
 }
